@@ -26,7 +26,7 @@ app.get('/api/health', (req, res) => {
 
 // MongoDB Connection
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/feedback-db', {
+  .connect(process.env.MONGODB_URI , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
